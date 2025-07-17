@@ -30,6 +30,21 @@ body {
     }
 }
 
+.animate
+{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: down 3s linear forwards;
+}
+
+@keyframes down
+{
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 
 /* loader */
