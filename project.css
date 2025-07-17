@@ -573,6 +573,70 @@ body {
 
 @media screen and (min-width:1440px) and (max-width:2159px) {
 
+     nav
+    {
+        position: relative;
+        width: 100%;
+        height: 60px;
+    }
+    nav a
+    {
+        text-decoration: none;
+        color:#fff;
+        line-height: 70px;
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    nav .animation
+    {
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 0;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out ;
+    }
+    a:nth-child(1)
+    {
+        width: 100px;
+    }
+    nav a:nth-child(1):hover~.animation
+    {
+        width: 100px;
+        left: 0;
+    }
+    a:nth-child(2)
+    {
+        width: 140px;
+    }
+    nav .start-home,a:nth-child(2):hover~.animation
+    {
+        width: 140px;
+        left: 100px;
+    }
+    a:nth-child(3)
+    {
+        width: 100px;
+    }
+    a:nth-child(3):hover~.animation
+    {
+        width: 100px;
+        left: 240px;
+    }
+    a:nth-child(4)
+    {
+        width: 100px;
+    }
+    a:nth-child(4):hover~.animation
+    {
+        width: 100px;
+        left: 340px;
+    }
+    
+
     .img {
         background-image: url(https://images.unsplash.com/photo-1601691244706-7427e2073a71?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
         background-repeat: no-repeat;
@@ -860,37 +924,10 @@ body {
     }
     .my-app
     {
-        height: 680px;
+        height: 400px;
         width: 100%;
-        background: linear-gradient(to top left, #91848428,rgba(98, 98, 107, 0.349));
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        column-gap: 30px;
+        background: linear-gradient(to top left, rgb(206, 175, 175),rgb(152, 152, 175));
     }
-    .app1 h3
-    {
-        color: #00000091;
-        text-align: start;
-        font-size: 17px;
-    }
-    .app2 h3
-    {
-       color: #00000091;
-        text-align: start;
-        font-size: 17px; 
-    }
-    .app1,.app2
-    {
-        height: 300px;
-        width: 45%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-   
-    }
-
     
     
     
