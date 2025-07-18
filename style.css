@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 4000px;
+    height: auto;
 }
 .anim
 {
@@ -21,7 +21,7 @@ body {
     from
     {
         opacity: 1;
-        clip-path: inset(100% 100% 0 0);
+        clip-path: inset(100% 100% 0% 0%);
     }
     to
     {
@@ -34,7 +34,7 @@ body {
 {
     opacity: 0;
     transform: translateY(60px);
-    animation: down 3s linear forwards;
+    animation: down 3s linear forwards 2;
 }
 
 @keyframes down
@@ -344,13 +344,14 @@ body {
 
     .details {
         background-color: #f3bdaa7e;
-        height: 100vh;
+        height: 110vh;
         width: 100%;
         display: flex;
         flex-direction: column;
-        column-gap: 20px;
+        column-gap: 10px;
         justify-content: center;
         transition: all 1s ease 0.5s;
+        padding: 0 10px;
 
     }
 
@@ -358,7 +359,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 400px;
+        height: 300px;
         transition: all 1s ease 0.5s;
     }
 
@@ -367,7 +368,7 @@ body {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        height: 400px;
+        height: 500px;
         transition: all 1s ease 0.5s;
     }
 
@@ -416,6 +417,7 @@ body {
         margin-top: 30px;
         justify-content: space-evenly;
         align-items: center;
+        padding: 10px 25px;
         transition: all 1s ease 0.5s;
     }
 
@@ -478,6 +480,38 @@ body {
     .more-check
     {
         width: 100%;
+    }
+     .my-app
+    {
+        height: auto;
+        width: 100%;
+        background: linear-gradient(to top left, #91848428,rgba(98, 98, 107, 0.349));
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+    .app1,.app2
+    {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+   
+    }
+    .heading-content
+    {
+        color: #d3124c81;
+        font-size: 15px;
+        
+    }
+    .para-content
+    {
+        text-align: justify;
+        color: #888;
     }
 
 
@@ -581,11 +615,12 @@ body {
         height: 600px;
         transition: all 1s ease 0.5s;
     }
-
-    .main-container {
-        width: 80%;
+    .main-container
+    {
+        width: 98%;
         margin: 0 auto;
     }
+
 
     .social-media,
     .nav-header,
@@ -866,30 +901,63 @@ body {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        column-gap: 30px;
-    }
-    .app1 h3
-    {
-        color: #00000091;
-        text-align: start;
-        font-size: 17px;
-    }
-    .app2 h3
-    {
-       color: #00000091;
-        text-align: start;
-        font-size: 17px; 
     }
     .app1,.app2
     {
         height: 300px;
-        width: 45%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
    
     }
+    .heading-content
+    {
+        color: #d3124c81;
+        font-size: 15px;
+        
+    }
+     .para-content
+    {
+        text-align: justify;
+        color: #888;
+    }
+    .footer-content
+    {
+        background-image: url('./images/pexels-teona-swift-6912829.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+    }
+    .reserved
+    {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        align-items: center;
+    }
+    .footer-media
+    {
+        display: grid;
+        grid-template-columns: 40px 40px 40px 40px;
+        height: 50px;
+        justify-content: end;
+        align-content: end;
+    }
+    .footer-blur
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 300px;
+    }
+    body
+    {
+        overflow: h
+    }
+  
 
     
     
