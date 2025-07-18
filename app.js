@@ -21,3 +21,26 @@ window.addEventListener('load', () => {
     document.body.removeChild('loader');
   })
 })
+
+
+const btn = document.getElementById('btn');
+
+window.onscroll = function(){scrollfunction()};
+
+function scrollfunction()
+{
+  if(document.body.scrollTop>20 || document.documentElement.scrollTop > 20)
+  {
+    btn.style.display = "block"
+  }
+  else
+  {
+    btn.style.display = "none"
+  }
+}
+
+function ontop()
+{
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
